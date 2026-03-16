@@ -109,7 +109,27 @@ To get your code on your laptop:
 
 ---
 
-## 🔄 Daily Workflow
+## 🔐 Phase 3.5: Authentication (The "Password" Error)
+If you see an error saying **"Password authentication is not supported"**, it's because GitHub requires a **Personal Access Token (PAT)** instead of your password.
+
+### 🛠️ How to create a Token:
+1.  Go to **GitHub Settings** -> **Developer settings** (bottom left) -> **Personal access tokens** -> **Tokens (classic)**.
+2.  Click **Generate new token (classic)**.
+3.  **Note:** Give it a name like "My PC Token".
+4.  **Expiration:** Choose "No expiration" or "90 days".
+5.  **Select Scopes:** Check the box for `repo` (Full control of private repositories).
+6.  Click **Generate token**.
+7.  **IMPORTANT:** Copy this token immediately! You will not see it again.
+
+### 🛠️ How to use the Token:
+When Git asks for your **Password**, paste this **Token** instead. 
+
+**Pro-Tip (Windows/Linux/Mac):** To avoid typing it every time, run this command:
+```bash
+git config --global credential.helper store
+```
+The next time you push, it will ask for your Token once and save it forever!
+
 
 1.  **Work** on your code.
 2.  **Save** your work:
