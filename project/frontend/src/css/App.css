@@ -83,6 +83,12 @@ h1 {
   letter-spacing: 0.05em;
 }
 
+.kanban-column.drag-over{
+  background-color: rgba(0,123,255,0.1);
+  border: 2px dashed #007bff;
+  transition: all 0.2 ease;
+}
+
 /* Task Cards */
 .task-list {
   display: flex;
@@ -147,6 +153,45 @@ h1 {
   border-color: var(--danger);
   color: var(--danger);
 }
+
+/* Delete all — destructive secondary, matches card delete-btn tone */
+.delButton {
+  margin: 0 auto 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.15rem;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--danger);
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s,
+    color 0.2s,
+    box-shadow 0.2s;
+}
+
+.delButton:hover {
+  background-color: #fee2e2;
+  border-color: var(--danger);
+  color: #b91c1c;
+}
+
+.delButton:focus-visible {
+  outline: 2px solid var(--danger);
+  outline-offset: 2px;
+}
+
+.delButton:active {
+  background-color: #fecaca;
+}
+
+
 
 /* Column Specific Backgrounds */
 .kanban-column:nth-child(2) { background-color: var(--progress-bg); }

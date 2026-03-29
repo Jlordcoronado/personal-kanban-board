@@ -123,6 +123,18 @@ app.delete('/api/tasks/:id', async (req, res) => {
   }
 });
 
+// DELETE ALL TASKS
+app.delete('/api/tasks', async (req, res)=> {
+
+  try{
+    await db.run('DELETE FROM tasks');
+    res.status(204).send(); // 204 means no content
+
+  } catch (err) {
+    res.status(500).json({ message: 'Error deleting all tasks' });
+  }
+})
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
