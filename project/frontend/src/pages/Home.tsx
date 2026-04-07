@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import type { Task } from '../types/task.ts';
 import { KanbanColumn } from '../component/KanbanColumn.tsx';
-import '../css/App.css'
+
 
 function Home(){
     const [tasks, setTasks] = useState<Task[]>([]);
@@ -94,7 +94,12 @@ function Home(){
 
   return (
     <div className="app-container">
-      <h1>Personal Kanban Board</h1>
+      <h1 className="text-4xl font-black text-blue-500 dark:text-yellow-400 text-center py-10 transition-colors duration-300">
+        Kanban Mastery</h1>
+
+        <h1 className="text-4xl font-bold text-blue-600 dark:text-yellow-400">
+          Dark Mode Test!
+        </h1>
 
       <form className="add-task-form" onSubmit={addTask}>
         <input

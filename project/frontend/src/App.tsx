@@ -1,5 +1,5 @@
 import Home from './pages/Home.tsx';
-import './css/App.css';
+
 
 function App() {
   return(
