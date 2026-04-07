@@ -36,3 +36,11 @@ This journal tracks the step-by-step evolution of the project from a .NET/VB bac
 - **Remote Sync:** Successfully pushed the entire project to GitHub after the architectural refactor.
 - **Cross-Device Setup:** Created `LAPTOP_SETUP.md` with detailed instructions on how to clone, install, and run the project on another machine.
 - **Git Mastery:** Staged all untracked files and committed with semantic messages.
+
+---
+
+### Phase 4: Modernization & Security (Tailwind v4 + SSH) 🚧
+- **Step 13:** Installed **Tailwind CSS v4** using the new Vite plugin architecture.
+- **Step 14:** Configured **Dark Mode** support via CSS variables and the `.dark` class.
+- **Step 15:** Migrated from GitHub HTTPS/Tokens to **SSH Key Authentication** (Ed25519).
+- **Step 16:** Resolved **WSL-to-Windows "Dubious Ownership"** Git errors.

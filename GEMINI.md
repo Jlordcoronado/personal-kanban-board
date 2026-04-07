@@ -39,3 +39,10 @@ Transform from a .NET Developer (Level 1) into a Full-Stack Freelancer (TypeScri
 - **Debugging Mastery:** Fixed a critical "White Page" error caused by Case Sensitivity (`kanbanColumn` vs `KanbanColumn`).
 - **Strategic Pivot:** Agreed to implement **Tailwind CSS** as the primary styling tool to ensure a modern, industry-standard portfolio.
 - **Next Session:** Install Tailwind CSS and begin the UI modernization of the Kanban board.
+
+### **Tuesday, April 7, 2026**
+- **Tailwind CSS v4 Setup:** Adopted the new **Tailwind v4 "CSS-first" approach**, skipping `tailwind.config.js` for `@import "tailwindcss";` in `index.css`.
+- **Vite Integration:** Configured `@tailwindcss/vite` plugin in `vite.config.ts`.
+- **Dark Mode Strategy:** Implemented a global `.dark` class strategy using CSS variables for smooth theme transitions.
+- **Git Security:** Switched from HTTPS/Tokens to **SSH Keys (Ed25519)** for professional, password-less authentication.
+- **Next Session:** Apply final Tailwind utility classes to `KanbanColumn.tsx` and `TaskCard.tsx` to complete the UI overhaul.
